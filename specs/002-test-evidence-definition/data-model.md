@@ -9,6 +9,8 @@ These are documentation-record schemas, not data structures claimed to exist in 
 | Scope-owner role | `work-unit operator` | Do not invent a named individual. |
 | Test target | `evidence-definition candidate only` | Must not name a legacy behaviour, asset, or full-inventory test target. |
 | Acceptance artifact | `explicitly unavailable` | Must state that contents and location are not supplied. |
+| Acceptance-criteria source | Work-unit operator input, `Acceptance boundaries` section, dated `2026-10-01` | Record the source verbatim and distinguish the input from legacy evidence and an acceptance criterion. |
+| Acceptance-criteria gate | `BLOCKED` — `Acceptance boundaries: (none stated)` | Must block acceptance planning and acceptance-validation claims until relevant criteria are supplied. |
 | Evaluation type | `documentary specification and evidence review` | Must exclude legacy execution and parity evaluation. |
 | Supplied-on date | `2026-09-30` | Records this fix-run decision. |
 | Provenance | Proposed scope decision; citations to [spec.md](spec.md) and its permitted legacy sources | Must not label a decision as legacy evidence. |
