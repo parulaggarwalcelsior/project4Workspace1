@@ -7,6 +7,7 @@
 ## Summary
 
 Create the documentation records for the evidence-definition-only candidate. The candidate records the work-unit operator as the scope-owner role, an explicitly unavailable acceptance artifact, the selected documentary evidence-review evaluation type, and the documented limits of the legacy reading. It neither executes the Java estate nor defines a Go implementation, expected legacy output, or parity result.
+Create the documentation records for the evidence-definition-only candidate. The candidate records the work-unit operator as the scope-owner role, an explicitly unavailable acceptance artifact, the selected documentary evidence-review evaluation type, and the documented limits of the legacy reading. It neither executes the Java estate nor defines a Go implementation, expected legacy output, or parity result. The scope owner has stated `Acceptance boundaries: (none stated)`, so this plan is blocked from advancing acceptance planning or acceptance validation.
 
 ## Technical Context
 
@@ -17,6 +18,7 @@ Create the documentation records for the evidence-definition-only candidate. The
 **Storage**: Versioned Markdown records under `specs/002-test-evidence-definition/`.
 
 **Testing**: Documentary evidence review using [quickstart.md](quickstart.md); no executable legacy or migration test is in scope.
+**Testing**: Documentary evidence review using [quickstart.md](quickstart.md) may verify evidence classifications, reading limits, and the blocked acceptance-criteria gate. It MUST NOT report an acceptance-validation result; no executable legacy or migration test is in scope.
 
 **Target Platform**: This workspace's documentation review.
 
@@ -27,6 +29,12 @@ Create the documentation records for the evidence-definition-only candidate. The
 **Constraints**: Preserve documented unavailable and unsearched areas as reading limits; classify every estate-related claim; do not state an expected legacy output, execution result, or Java-to-Go parity result.
 
 **Scale/Scope**: One bounded evidence-definition candidate concerning the documented 115-item Java inventory; it does not select an estate behaviour or an inventory-wide test target.
+
+## Acceptance-Criteria Gate
+
+**Scope-owner response (2026-10-01)**: `Acceptance boundaries: (none stated)`. **Permitted source**: work-unit operator input, `Acceptance boundaries` section of the instruction supplied for this feature ([spec.md](spec.md#acceptance-criteria-gate)). This input supplies no acceptance criterion.
+
+**Plan status: BLOCKED.** No relevant acceptance criteria are available for this candidate. The plan may retain its documentary record structure, but no further acceptance planning or acceptance validation may proceed until the scope owner supplies the criteria. The frozen acceptance basis recorded by [approach.md](../../../../old/docs/approach.md) does not supply those criteria here.
 
 ## Constitution Check
 
@@ -39,6 +47,11 @@ Create the documentation records for the evidence-definition-only candidate. The
 | V. Traceable Acceptance | Pass | The review process distinguishes cited evidence, reading limits, proposed decisions, and blocked outcome assertions. |
 
 **Post-design re-check**: Pass. The data model and validation guide retain the same evidence-only boundary and introduce no legacy behaviour claim or executable test.
+| III. Specification Precedes Delivery | Blocked | The specification's [Acceptance-Criteria Gate](spec.md#acceptance-criteria-gate) records the scope-owner response `Acceptance boundaries: (none stated)`. This plan cannot advance acceptance planning or acceptance validation without relevant criteria. |
+| IV. Migration Preserves Established Semantics | Pass | No behaviour is re-expressed, executed, or compared between Java and Go. |
+| V. Traceable Acceptance | Blocked | The review process distinguishes cited evidence, reading limits, proposed decisions, and blocked outcome assertions, but no acceptance criteria are supplied to trace to an acceptance result. |
+
+**Post-design re-check**: Blocked for acceptance planning and acceptance validation. The data model and validation guide retain the evidence-only boundary, but cannot establish an acceptance result without scope-owner criteria.
 
 ## Project Structure
 

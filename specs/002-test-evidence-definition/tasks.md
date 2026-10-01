@@ -6,6 +6,7 @@ description: "Task list for the Test Evidence Definition documentation candidate
 # Tasks: Test Evidence Definition
 
 **Input**: [spec.md](spec.md), [plan.md](plan.md), [research.md](research.md), [data-model.md](data-model.md), [quickstart.md](quickstart.md), the [project constitution](../../.specify/memory/constitution.md), and the permitted legacy readings in `../../../old/docs/`.
+**Input**: [spec.md](spec.md), [plan.md](plan.md), [research.md](research.md), [data-model.md](data-model.md), [quickstart.md](quickstart.md), the [project constitution](../../.specify/memory/constitution.md), and the permitted legacy readings in `../../../../old/docs/`.
 
 **Boundary**: All tasks create or review Markdown records for the evidence-definition-only candidate. The fixed decisions are: the work-unit operator is the scope-owner role; the test target is the evidence-definition candidate only; the acceptance artifact is explicitly unavailable; and evaluation is documentary specification and evidence review. No task executes the Java estate, creates Go code, defines an expected legacy output, or evaluates Java-to-Go parity.
 
@@ -18,6 +19,8 @@ description: "Task list for the Test Evidence Definition documentation candidate
 - [x] T001 [P] Create the scope-intake record headings and fields from the Scope Intake Record schema in `specs/002-test-evidence-definition/scope-intake.md`
 - [x] T002 [P] Create the evidence-register headings and allowed classification fields from the Evidence Register Entry schema in `specs/002-test-evidence-definition/evidence-register.md`If you have this question- "implement: ists/requirements.md:28:- [x] User scenarios cover primary flows specs/002-test-evidence-definition/checklists/requirements.md:29:- [ ] Feature meets measurable outcomes defined in Success Criteria — SC-003 depends on the scope owner specs/002-test-evidence-definition/checklists/requirements.md:30:- [x] No implementation details leak into specification codex | Checklist | Total | Checked | Unchecked | Status | |---|---:|---:|---:|---| | requirements.md | 15 | 12 | 3 | ✗ FAIL | Some checklists have unchecked items. Do you want to proceed with implementation anyway? (yes/no) tokens used 17,530", then Answer is Yes.
 - [x] T003 [P] Create the claim-review checklist headings and checks from the Claim Review Record schema in `specs/002-test-evidence-definition/claim-review-checklist.md` if you have this question 'implement: ' \""'$f" | wc -l) printf '"'%s\\t%s\\t%s\\t%s\\n' \""'$(basename "$f")" "$total" "$checked" "$unchecked" done fi' in /synthetix/new/project4Workspace1 succeeded in 40ms: {"FEATURE_DIR":"/synthetix/new/project4Workspace1/specs/002-test-evidence-definition","AVAILABLE_DOCS":["research.md","data-model.md","quickstart.md","tasks.md"]} requirements.md 16 13 3 codex | Checklist | Total | Checked | Unchecked | Status | |---|---:|---:|---:|---| | requirements.md | 16 | 13 | 3 | ✗ FAIL | Some checklists have unchecked items. Do you want to proceed with T003 anyway? (yes/no) tokens used 17,956' then Answer is Yes.
+- [x] T002 [P] Create the evidence-register headings and allowed classification fields from the Evidence Register Entry schema in `specs/002-test-evidence-definition/evidence-register.md`
+- [x] T003 [P] Create the claim-review checklist headings and checks from the Claim Review Record schema in `specs/002-test-evidence-definition/claim-review-checklist.md`
 
 ---
 
@@ -30,6 +33,7 @@ description: "Task list for the Test Evidence Definition documentation candidate
 - [x] T004 [P] Populate the fixed scope-owner role, evidence-definition-only target, explicitly unavailable acceptance artifact, documentary-review evaluation type, supplied-on date, provenance, and blocked-outcome status in `specs/002-test-evidence-definition/scope-intake.md`
 - [x] T005 [P] Populate documented-reading-limit entries for persistence, endpoints, security, edge cases, and workflows, each with its permitted legacy citation and `UNAVAILABLE` or `Could not search` status, in `specs/002-test-evidence-definition/evidence-register.md`
 - [ ] T006 [P] Define citation-or-proposed-decision, reading-limit, and outcome-assertion checks that reject unsupported negative findings and block unsupported expected outcomes in `specs/002-test-evidence-definition/claim-review-checklist.md`
+- [x] T006 [P] Define citation-or-proposed-decision, reading-limit, and outcome-assertion checks that reject unsupported negative findings and block unsupported expected outcomes in `specs/002-test-evidence-definition/claim-review-checklist.md`
 
 **Checkpoint**: Scope decisions and shared controls exist, while all legacy outcomes remain blocked pending an observable contract, acceptance check, and evaluation basis.
 
@@ -46,6 +50,9 @@ description: "Task list for the Test Evidence Definition documentation candidate
 - [ ] T007 [US1] Trace each fixed boundary decision in the scope intake to its matching clarification and FR-006 through FR-008 in `specs/002-test-evidence-definition/scope-intake.md`
 - [ ] T008 [US1] Add proposed-scope-decision register entries for the selected target, scope-owner role, unavailable acceptance artifact, and documentary evaluation type with citations to `spec.md` in `specs/002-test-evidence-definition/evidence-register.md`
 - [ ] T009 [US1] Record the results of the User Story 1 boundary review as `pass`, `unresolved`, `blocked`, or `rejected`, without reporting an execution result, in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T007 [US1] Trace each fixed boundary decision in the scope intake to its matching clarification and FR-006 through FR-008 in `specs/002-test-evidence-definition/scope-intake.md`
+- [x] T008 [US1] Add proposed-scope-decision register entries for the selected target, scope-owner role, unavailable acceptance artifact, and documentary evaluation type with citations to `spec.md` in `specs/002-test-evidence-definition/evidence-register.md`
+- [x] T009 [US1] Record the results of the User Story 1 boundary review as `pass`, `unresolved`, `blocked`, or `rejected`, without reporting an execution result, in `specs/002-test-evidence-definition/evidence-review.md`
 
 **Checkpoint**: The candidate’s bounded target is reviewable and no legacy behaviour, asset, or inventory-wide test target is selected.
 
@@ -62,6 +69,9 @@ description: "Task list for the Test Evidence Definition documentation candidate
 - [ ] T010 [US2] Classify every estate-related statement in the scope intake and evidence review as verified legacy evidence, documented reading limit, supported inference, or proposed scope decision in `specs/002-test-evidence-definition/evidence-register.md`
 - [ ] T011 [US2] Add separate review findings for persistence, endpoint discovery, security, edge cases, and workflows that retain the documented unavailable or unsearched status in `specs/002-test-evidence-definition/evidence-review.md`
 - [ ] T012 [US2] Apply the citation, reading-limit, and outcome-assertion checks to all candidate records and record unsupported, unresolved, blocked, or rejected claims in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T010 [US2] Classify every estate-related statement in the scope intake and evidence review as verified legacy evidence, documented reading limit, supported inference, or proposed scope decision in `specs/002-test-evidence-definition/evidence-register.md`
+- [x] T011 [US2] Add separate review findings for persistence, endpoint discovery, security, edge cases, and workflows that retain the documented unavailable or unsearched status in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T012 [US2] Apply the citation, reading-limit, and outcome-assertion checks to all candidate records and record unsupported, unresolved, blocked, or rejected claims in `specs/002-test-evidence-definition/evidence-review.md`
 
 **Checkpoint**: Every estate-related claim is classified and cited or explicitly labelled as a proposed decision; unsupported claims are retained as unresolved or blocked rather than converted into findings.
 
@@ -78,6 +88,9 @@ description: "Task list for the Test Evidence Definition documentation candidate
 - [ ] T013 [US3] Create the bounded-subject, input, expected-outcome, observable-contract, evidence-source, acceptance-check, evaluation-type, and blocked-status fields in `specs/002-test-evidence-definition/next-test-slice.md`
 - [ ] T014 [US3] Populate the next-test-slice record only with the fixed documentary boundary and mark the observable contract, input, expected outcome, evidence source, and acceptance check as blocked when not supplied in `specs/002-test-evidence-definition/next-test-slice.md`
 - [ ] T015 [US3] Review each next-slice field as evidence-supported, proposed, or blocked and record that no execution or parity conclusion is available in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T013 [US3] Create the bounded-subject, input, expected-outcome, observable-contract, evidence-source, acceptance-check, evaluation-type, and blocked-status fields in `specs/002-test-evidence-definition/next-test-slice.md`
+- [x] T014 [US3] Populate the next-test-slice record only with the fixed documentary boundary and mark the observable contract, input, expected outcome, evidence source, and acceptance check as blocked when not supplied in `specs/002-test-evidence-definition/next-test-slice.md`
+- [x] T015 [US3] Review each next-slice field as evidence-supported, proposed, or blocked and record that no execution or parity conclusion is available in `specs/002-test-evidence-definition/evidence-review.md`
 
 **Checkpoint**: The next-slice record remains reviewable without inventing a legacy contract, expected outcome, or acceptance check.
 
@@ -89,6 +102,8 @@ description: "Task list for the Test Evidence Definition documentation candidate
 
 - [ ] T016 Audit the scope intake, evidence register, checklist, evidence review, and next-slice record for Constitution §§I–V traceability, explicit unknowns, and evidence-only scope in `specs/002-test-evidence-definition/evidence-review.md`
 - [ ] T017 Execute the five documentary validation steps in `quickstart.md` and record the candidate’s completion criterion and remaining blocked inputs in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T016 Audit the scope intake, evidence register, checklist, evidence review, and next-slice record for Constitution §§I–V traceability, explicit unknowns, and evidence-only scope in `specs/002-test-evidence-definition/evidence-review.md`
+- [x] T017 Execute the five documentary validation steps in `quickstart.md` and record the candidate’s completion criterion and remaining blocked inputs in `specs/002-test-evidence-definition/evidence-review.md`
 
 ---
 
@@ -174,3 +189,28 @@ No parallel tasks: T013 → T014 → T015 preserves the template-to-blocked-reco
 
 - All tasks are proposed documentation work, not observed legacy implementation behaviour.
 - A future task may only replace a blocked next-slice field when newly supplied permitted evidence identifies its observable contract and acceptance check.
+
+## Phase 7: Convergence
+
+- [x] T018 CRITICAL Reconcile the pre-planning requirements checklist with the resolved evidence-only scope decisions and completed documentary validation, retaining traceable support for each validation claim per Constitution III, Constitution V, and SC-003 (contradicts)
+- [x] T019 Review and remove or justify the unrequested implementation-session prompts and command-output transcripts embedded in completed task descriptions, while preserving the original task traceability per tasks.md T002, T003, T006, and T012. **Traceability**: Proposed documentation-maintenance decision, not legacy evidence; [plan.md](plan.md#project-structure) identifies `tasks.md` as the task-stage output and retains work in the feature documentation directory. (unrequested)
+
+## Phase 8: Convergence
+
+- [x] T020 CRITICAL Obtain or identify the relevant acceptance criteria from the scope owner, then reconcile the specification, plan, and evidence-review records so planning and validation no longer proceed without them per Constitution III (contradicts)
+- [x] T021 Classify every next-test-slice claim with one FR-002 classification (`verified legacy evidence`, `documented reading limit`, `supported inference`, or `proposed scope decision`) and record `blocked` separately as its review status where applicable per FR-002 and SC-004 (partial)
+- [x] T022 Add a conflict-provenance field or review finding that records an acceptance artifact conflicting with an unavailable or unsearched reading, preserves both sources, and leaves the conflict unresolved without asserting a legacy fact per Edge Cases: acceptance-artifact conflict (missing)
+- [x] T023 Review, justify, or remove the unplanned `analysis.md` artifact from the feature directory, retaining it only if its purpose and traceability are added to the feature scope per plan: Project Structure (unrequested)
+
+## Phase 9: Convergence
+
+- [x] T024 CRITICAL Correct every legacy-document citation that resolves outside the permitted `../../old/docs/` reading, then revalidate claim provenance across the feature artifacts per Constitution I and Constitution V (contradicts)
+- [x] T025 CRITICAL Reframe the T022 acceptance-artifact conflict record as a conditional edge-case review, or remove it until a supplied acceptance condition actually conflicts with a documented reading, preserving only evidenced source states per Constitution I and Edge Cases: acceptance-artifact conflict (contradicts)
+- [x] T026 CRITICAL Amend T019 with an explicit, traceable proposed-decision or legacy-evidence reference for its scope per Constitution V (contradicts)
+- [x] T027 Remove the unplanned `analysis.md` artifact, which still has no feature-scope purpose in the plan, per plan: Project Structure (unrequested)
+
+## Phase 10: Convergence
+
+- [x] T028 CRITICAL Obtain the relevant acceptance criteria from the scope owner and, after recording their permitted source, reconcile the specification, plan, tasks, and documentary records before any acceptance-planning or acceptance-validation claim per Constitution III, FR-009, and SC-005 (contradicts)
+- [x] T029 CRITICAL Reconcile the `pass` claims in `specs/002-test-evidence-definition/checklists/requirements.md` that functional requirements have clear acceptance criteria and that the feature meets measurable outcomes with the current `BLOCKED` acceptance-criteria gate, retaining only traceable documentary-review results per Constitution III, Constitution V, FR-009, and SC-005 (contradicts)
+- [x] T030 Remove `specs/002-test-evidence-definition/analysis.md`, or add its traceable feature purpose to the planned project structure, per plan: Project Structure (unrequested)
