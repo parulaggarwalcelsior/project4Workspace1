@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Python 3 is the only interpreter version declared by this tree.  It
+      # declares neither a package manager nor dependencies to cache.
+      - name: Set up documented Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3'
+      - name: Cache Python dependency directory
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-python3-no-dependencies
+      - name: Lint
+        run: make lint
+      - name: Test
+        run: make test
+      - name: Build container image without pushing
+        run: make docker-build
