@@ -199,3 +199,15 @@ No parallel tasks: T013 → T014 → T015 preserves the template-to-blocked-reco
 - [x] T028 CRITICAL Obtain the relevant acceptance criteria from the scope owner and, after recording their permitted source, reconcile the specification, plan, tasks, and documentary records before any acceptance-planning or acceptance-validation claim per Constitution III, FR-009, and SC-005 (contradicts)
 - [x] T029 CRITICAL Reconcile the `pass` claims in `specs/002-test-evidence-definition/checklists/requirements.md` that functional requirements have clear acceptance criteria and that the feature meets measurable outcomes with the current `BLOCKED` acceptance-criteria gate, retaining only traceable documentary-review results per Constitution III, Constitution V, FR-009, and SC-005 (contradicts)
 - [x] T030 Remove `specs/002-test-evidence-definition/analysis.md`, or add its traceable feature purpose to the planned project structure, per plan: Project Structure (unrequested)
+
+## Phase 11: Convergence
+
+- [x] T031 Remove `specs/002-test-evidence-definition/analysis.md`, or add its traceable feature purpose to the planned project structure, per plan: Project Structure and T030 (unrequested)
+
+## Phase 12: Convergence
+
+- [x] T032 Remove `specs/002-test-evidence-definition/analysis.md`, or add its traceable feature purpose to the planned project structure, per plan: Project Structure and T031 (unrequested)
+
+## Phase 13: Convergence
+
+- [x] T033 Remove `specs/002-test-evidence-definition/analysis.md`, or add its traceable feature purpose to the planned project structure, per plan: Project Structure (unrequested)

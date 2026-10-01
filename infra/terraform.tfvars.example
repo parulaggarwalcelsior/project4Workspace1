@@ -1,0 +1,10 @@
+# Copy these non-secret deployment values to GitHub Actions variables. Do not
+# commit a real .tfvars file with account-specific values.
+resource_group_name      = "rg-evidence-example"
+location                 = "westeurope"
+container_registry_name  = "acrevidenceexample"
+image_tag                = "0123456789abcdef0123456789abcdef01234567"
+tags = {
+  application = "evidence-definition"
+  environment = "production"
+}

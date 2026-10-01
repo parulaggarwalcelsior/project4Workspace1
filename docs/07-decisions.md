@@ -1,0 +1,21 @@
+# Decisions
+
+After reading this page, an engineer will know the significant decisions embodied by the built candidate, alternatives that were considered, and the exact records that justify them. These are proposed documentation-scope decisions, not discoveries about legacy behaviour.
+
+| Decision | Alternatives considered | Why this choice was taken | Record |
+|---|---|---|---|
+| Use the evidence-definition candidate as the immediate target | Select a behaviour, asset, or all 115 inventory items | The permitted reading has no behavioural model or observable contract, and the approach says there is nothing concrete to test. | [research.md: Decision 1](../specs/002-test-evidence-definition/research.md#decision-1-immediate-boundary); [spec.md: Clarifications](../specs/002-test-evidence-definition/spec.md#clarifications) |
+| Name the work-unit operator as the scope-owner role | Invent a named supplier or owner | No named individual is supplied in permitted material. | [scope intake: Scope-owner role](../specs/002-test-evidence-definition/scope-intake.md); [data model: Scope Intake Record](../specs/002-test-evidence-definition/data-model.md#scope-intake-record) |
+| Treat the acceptance artifact as explicitly unavailable | Treat the frozen basis as an available test oracle | The reading says the basis is frozen but does not supply its contents, location, or named supplier. | [research.md: Decision 2](../specs/002-test-evidence-definition/research.md#decision-2-acceptance-artifact-treatment); [legacy approach: What this analysis was given](../../old/docs/approach.md#what-this-analysis-was-given) |
+| Limit evaluation to documentary specification and evidence review | Run the legacy estate or perform Java-to-Go parity evaluation | No observable contract, acceptance check, or execution/evaluation basis is supplied. | [research.md: Decision 3](../specs/002-test-evidence-definition/research.md#decision-3-evaluation-type); [spec.md: FR-008](../specs/002-test-evidence-definition/spec.md#functional-requirements) |
+| Use Markdown records and manual review controls | Build a runtime, Java/Go harness, database, or CI integration | The scope is a documentation candidate, not a runnable component. | [research.md: Decision 4](../specs/002-test-evidence-definition/research.md#decision-4-documentation-technology); [plan.md: Project Structure](../specs/002-test-evidence-definition/plan.md#project-structure) |
+| Preserve unavailable and unsearched readings as limits | Infer that persistence, endpoints, security, edge cases, or workflows are absent | The constitution prohibits converting missing readings into negative findings. | [constitution: Principle II](../.specify/memory/constitution.md#core-principles); [claim review checklist: Reading-limit check](../specs/002-test-evidence-definition/claim-review-checklist.md#claim-review-checks) |
+| Keep the acceptance-criteria gate `BLOCKED` | Report acceptance planning or validation from the recorded absence | The scope-owner response supplies no relevant criterion. | [spec.md: Acceptance-Criteria Gate](../specs/002-test-evidence-definition/spec.md#acceptance-criteria-gate); [evidence review: T028](../specs/002-test-evidence-definition/evidence-review.md#t028-acceptance-criteria-source-and-cross-artifact-reconciliation) |
+
+## Decision consequences
+
+The candidate records a reviewable boundary and can be checked by the referee, but it cannot establish legacy correctness, execute Java, produce Go behaviour, or establish parity. A later candidate must supply and trace an observable contract, expected outcome, acceptance check, and evaluation basis before changing that position ([next-test-slice record](../specs/002-test-evidence-definition/next-test-slice.md); [spec.md: FR-004](../specs/002-test-evidence-definition/spec.md#functional-requirements)).
+
+## Gaps against the specification
+
+The decision log cannot resolve the blocked acceptance gate. The candidate records that `Acceptance boundaries: (none stated)` was supplied, and requires a future reconciliation only after relevant criteria are provided ([scope intake: Acceptance-criteria response and gate](../specs/002-test-evidence-definition/scope-intake.md)).
