@@ -5,6 +5,10 @@
 | Scope-owner role | work-unit operator |
 | Test target | evidence-definition candidate only |
 | Acceptance artifact | explicitly unavailable; contents and location are not supplied |
+| Evaluation type | documentary specification and evidence review; excludes legacy execution and parity evaluation |
+| Supplied-on date | 2026-09-30 |
+| Provenance | Proposed scope decision; [spec.md](spec.md) and its permitted legacy sources ([overview.md](../../../old/docs/overview.md), [approach.md](../../../old/docs/approach.md)) |
+| Blocked status | Outcome assertions blocked |
 | Acceptance-criteria source | work-unit operator input, `Acceptance boundaries` section of the instruction supplied for this feature, dated 2026-10-01 |
 | Acceptance-criteria response | `Acceptance boundaries: (none stated)`; this scope-owner input is not legacy evidence or an acceptance criterion |
 | Acceptance-criteria gate | `BLOCKED`; no acceptance planning or acceptance-validation claim is permitted until relevant criteria are supplied and reconciled with the specification, plan, tasks, and documentary records |

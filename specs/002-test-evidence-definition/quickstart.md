@@ -12,6 +12,15 @@ Validate the documentation candidate without running the legacy Java estate, cre
 
 ## Review procedure
 
+1. Confirm that [spec.md](spec.md) contains three resolved entries under `## Clarifications` and no unresolved clarification marker.
+   - Expected result: the boundary is evidence-definition only, the acceptance artifact is explicitly unavailable, and evaluation is documentary evidence review.
+2. Confirm that FR-006 through FR-008 and SC-003 state the same three decisions.
+   - Expected result: no legacy behaviour, expected output, or test execution is selected.
+3. Confirm that [plan.md](plan.md), [research.md](research.md), and [data-model.md](data-model.md) use the same boundary and preserve the unavailable acceptance artifact.
+   - Expected result: all downstream artifacts agree with the specification.
+4. Review claims about persistence, endpoints, security, edge cases, and workflows against their cited legacy readings.
+   - Expected result: each remains an unavailable or unsearched reading limit, not an assertion that the estate lacks the relevant behaviour.
+5. Review any future scope intake, register, review, or next-slice records against [data-model.md](data-model.md).
 1. Confirm that [scope-intake.md](scope-intake.md), [spec.md](spec.md), [plan.md](plan.md), [tasks.md](tasks.md), and [evidence-review.md](evidence-review.md) record the scope-owner source and the same acceptance-criteria gate.
    - Expected result: the source is the work-unit operator input's `Acceptance boundaries` section, the response is `Acceptance boundaries: (none stated)`, and the status is `BLOCKED`; no acceptance-planning or acceptance-validation result is reported.
 2. Confirm that [spec.md](spec.md) contains three resolved entries under `## Clarifications` and no unresolved clarification marker.
@@ -27,4 +36,5 @@ Validate the documentation candidate without running the legacy Java estate, cre
 
 ## Completion criterion
 
+The candidate passes documentary review when its decisions and classifications are internally consistent and its reading limits remain explicit. This is not a legacy execution, test-result, or Java-to-Go parity result.
 The candidate may pass documentary review only when its decisions and classifications are internally consistent, its reading limits remain explicit, and the acceptance-criteria gate is recorded consistently. This is not an acceptance-validation, legacy-execution, test-result, or Java-to-Go parity result.

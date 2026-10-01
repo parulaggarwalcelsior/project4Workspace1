@@ -13,6 +13,7 @@
 
 ## Requirement Completeness
 
+- [ ] No [NEEDS CLARIFICATION] markers remain
 - [x] No [NEEDS CLARIFICATION] markers remain
 - [x] Requirements are testable and unambiguous, except the three explicitly marked scope-owner decisions
 - [x] Success criteria are measurable
@@ -24,6 +25,9 @@
 
 ## Feature Readiness
 
+- [ ] All functional requirements have clear acceptance criteria — blocked by FR-006 through FR-008
+- [x] User scenarios cover primary flows
+- [ ] Feature meets measurable outcomes defined in Success Criteria — SC-003 depends on the scope owner
 - [x] Documentary review confirms functional-requirements records; relevant acceptance criteria remain `BLOCKED`
 - [x] User scenarios cover primary flows
 - [x] Documentary review confirms the SC-005 gate; measurable-outcome satisfaction remains `BLOCKED`
@@ -31,6 +35,7 @@
 
 ## Notes
 
+Validation iteration 1 found three scope-critical clarification markers, within the maximum of three. The specification otherwise passes the checklist. The markers are retained because the evidence records no behaviour model, no supplied acceptance-basis contents, and no selected test type. No plan or implementation may proceed until the scope owner resolves them.
 Validation iteration 1 found three scope-critical clarification markers, within the maximum of three. The specification otherwise passed the checklist. The markers were retained because the evidence records no behaviour model, no supplied acceptance-basis contents, and no selected test type.
 
 ## T018 Reconciliation

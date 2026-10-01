@@ -6,6 +6,7 @@
 
 ## Summary
 
+Create the documentation records for the evidence-definition-only candidate. The candidate records the work-unit operator as the scope-owner role, an explicitly unavailable acceptance artifact, the selected documentary evidence-review evaluation type, and the documented limits of the legacy reading. It neither executes the Java estate nor defines a Go implementation, expected legacy output, or parity result.
 Create the documentation records for the evidence-definition-only candidate. The candidate records the work-unit operator as the scope-owner role, an explicitly unavailable acceptance artifact, the selected documentary evidence-review evaluation type, and the documented limits of the legacy reading. It neither executes the Java estate nor defines a Go implementation, expected legacy output, or parity result. The scope owner has stated `Acceptance boundaries: (none stated)`, so this plan is blocked from advancing acceptance planning or acceptance validation.
 
 ## Technical Context
@@ -16,6 +17,7 @@ Create the documentation records for the evidence-definition-only candidate. The
 
 **Storage**: Versioned Markdown records under `specs/002-test-evidence-definition/`.
 
+**Testing**: Documentary evidence review using [quickstart.md](quickstart.md); no executable legacy or migration test is in scope.
 **Testing**: Documentary evidence review using [quickstart.md](quickstart.md) may verify evidence classifications, reading limits, and the blocked acceptance-criteria gate. It MUST NOT report an acceptance-validation result; no executable legacy or migration test is in scope.
 
 **Target Platform**: This workspace's documentation review.
@@ -40,6 +42,11 @@ Create the documentation records for the evidence-definition-only candidate. The
 |---|---|---|
 | I. Evidence-Bound Description | Pass | The plan cites only permitted readings and labels the selected boundary, unavailable artifact, and evaluation type as proposed scope decisions. |
 | II. Unknowns Remain Explicit | Pass | The acceptance artifact is recorded as unavailable; persistence, endpoints, security, edge cases, and workflows remain documented limits. |
+| III. Specification Precedes Delivery | Pass | This plan follows [spec.md](spec.md) and produces documentation records only; [tasks.md](tasks.md) remains the later task stage. |
+| IV. Migration Preserves Established Semantics | Pass | No behaviour is re-expressed, executed, or compared between Java and Go. |
+| V. Traceable Acceptance | Pass | The review process distinguishes cited evidence, reading limits, proposed decisions, and blocked outcome assertions. |
+
+**Post-design re-check**: Pass. The data model and validation guide retain the same evidence-only boundary and introduce no legacy behaviour claim or executable test.
 | III. Specification Precedes Delivery | Blocked | The specification's [Acceptance-Criteria Gate](spec.md#acceptance-criteria-gate) records the scope-owner response `Acceptance boundaries: (none stated)`. This plan cannot advance acceptance planning or acceptance validation without relevant criteria. |
 | IV. Migration Preserves Established Semantics | Pass | No behaviour is re-expressed, executed, or compared between Java and Go. |
 | V. Traceable Acceptance | Blocked | The review process distinguishes cited evidence, reading limits, proposed decisions, and blocked outcome assertions, but no acceptance criteria are supplied to trace to an acceptance result. |
